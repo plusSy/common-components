@@ -5,6 +5,19 @@ window.console.log(plugins);
 
 export const { dialog } = plugins;
 
-export const { comOcjPager } = components;
+export const { 
+  comOcjButton,
+  comOcjPager,
+  comOcjCascader,
+  comOcjPopover,
+  comOcjTcode,
+  comOcjTable,
+  comOcjTree,
+  comOcjEditor,
+  comOcjClassCheck,
+  comOcjCategory,
+  comOcjIdInput,
+  comOcjDropdown
+ } = components;
 
 export default components

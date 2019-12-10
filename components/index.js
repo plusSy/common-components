@@ -20,7 +20,7 @@ import comOcjIdInput from './packages/comOcjCategory/index';
 import comOcjDropdown from './packages/comOcjCategory/index';
 
 // plugins
-import comOcjPlugins from '../plugins/index.js';
+import comOcjDialogPlugin from '../plugins/dialog/index.js';
 
 const components = [
   comOcjButton,
@@ -37,14 +37,26 @@ const components = [
   comOcjDropdown
 ];
 
+// function & methods
+import VALID from '../utils/valid';
+import Storge from '../utils/storge';
+import PubFn from '../utils/pubFn';
+
 // eslint-disable-next-line no-unused-vars
 const install = function (Vue, opts = {}) {
   if (Vue) {
+    // components
     components.forEach(component => {
       Vue.component(component.name, component)
     });
+    
+    // plugins
+    Vue.use(comOcjDialogPlugin);
 
-    Vue.use(comOcjPlugins);
+    // function & methods
+    Vue.prototype.$Valid = VALID;
+    Vue.prototype.$Storge = Storge;
+    Vue.prototype.$PubFn = PubFn;
   }
 }
 
