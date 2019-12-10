@@ -1,9 +1,15 @@
 module.exports = {
-   pages: {
-    index: {
-      entry: 'examples/main.js',
-      template: 'public/index.html',
-      filename: 'index.html'
+    pages: {
+        index: {
+            entry: 'examples/main.js',
+            template: 'public/index.html',
+            filename: 'index.html'
+        }
+    },
+    devServer: {
+        overlay: {
+            "warnings": false,
+            "errors": false
+        }
     }
-  }
-}
+};

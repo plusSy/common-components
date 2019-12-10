@@ -1,6 +1,6 @@
 {
   "name": "@ocj/common-components",
-  "version": "0.1.12",
+  "version": "0.1.14",
   "main": "main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -16,6 +16,7 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@ocj/eslint-config-ocj-vue": "^1.0.14",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",

@@ -61,6 +61,17 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-export default Object.assign(components, {
-  install
-});
+export default {
+  install,
+  comOcjPager,
+  comOcjCascader,
+  comOcjPopover,
+  comOcjTcode,
+  comOcjTable,
+  comOcjTree,
+  comOcjEditor,
+  comOcjClassCheck,
+  comOcjCategory,
+  comOcjIdInput,
+  comOcjDropdown
+};
