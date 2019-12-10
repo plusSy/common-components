@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>@ocj/ocj-erp-components</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="_media/docsify/vue.css" />
+    <link rel="stylesheet" href="_media/docsify/vuep.css" />
+    <link
+      rel="stylesheet"
+      href="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/element-ui.css"
+    />
+    <link rel="stylesheet" href="_media/index.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#/">首页</a>
+      <a href="#/className/">公共样式</a>
+      <a href="#/components/">公共组件</a>
+      <a href="#/comcontent/">公共内容</a>
+      <a href="#/plugins/">公共插件</a>
+      <a href="_icon/demo_index.html" target="_blank">自定义 ICON</a>
+    </nav>
+    <div id="app"></div>
+    <script src="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/ocj.js"></script>
+    <script src="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/element-ui.js"></script>
+    <script src="_media/docsify/babel.min.js"></script>
+    <script src="_media/docsify/docsify-demo-box-vue.min.js"></script>
+    <script src="//unpkg.com/docsify-plugin-codefund/index.js"></script>
+    <script src="_media/main.js"></script>
+    <script>
+      var jsResources =
+        '' +
+        '\n<scr' +
+        `ipt src="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/ocj.js"></scr` +
+        'ipt>' +
+        '\n<scr' +
+        `ipt src="//unpkg.com/element-ui/lib/index.js"></scr` +
+        'ipt>'
+      var cssResources =
+        '@import url("//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/element-ui.css");'
+      var bootCode = ''
+
+      window.$docsify = {
+        name: 'ocj-erp-components',
+        nameLink: '/',
+        //coverpage: true,
+        formatUpdated:
+          '<span style="float:right;">Last Updated: {YYYY}/{MM}/{DD} {HH}:{mm}</span>',
+        onlyCover: true,
+        auto2top: true,
+        autoHeader: true,
+        loadNavbar: false,
+        loadSidebar: true,
+        maxLevel: 5,
+        subMaxLevel: 0,
+        alias: {
+          // '/.*/_sidebar.md': '/_sidebar.md',
+          '/.*/_navbar.md': '/_navbar.md'
+        },
+        search: {
+          noData: {
+            '/': '没有结果!'
+          },
+          paths: 'auto',
+          placeholder: {
+            '/': '搜索'
+          }
+        },
+        plugins: [DemoBoxVue.create(jsResources, cssResources, bootCode)],
+        pagination: {
+          previousText: '上一章节',
+          nextText: '下一章节',
+          crossChapter: true
+        },
+        repo: ''
+      }
+    </script>
+    <script src="_media/docsify/docsify.min.js"></script>
+    <script src="_media/docsify/vuep.min.js"></script>
+    <script src="_media/docsify/search.min.js"></script>
+    <script src="_media/docsify/docsify-pagination.min.js"></script>
+
+    <script>
+      Vue.use(Vuep, { indentWithTabs: true })
+    </script>
+  </body>
+</html>

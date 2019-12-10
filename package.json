@@ -1,11 +1,15 @@
 {
   "name": "@ocj/common-components",
-  "version": "0.1.9",
+  "version": "0.1.12",
   "main": "main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "webpack && docsify serve ./docs",
+    "build:doc": "webpack",
+    "deploy": "npm run build:doc && node examples/assets/js/deploy.js",
+    "init": "npm install --registry http://npm.devops.erp.ocj.com.cn",
+    "pub": "npm publish --registry http://npm.devops.erp.ocj.com.cn"
   },
   "dependencies": {
     "core-js": "^3.4.3",
@@ -15,12 +19,23 @@
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
+    "archiver": "^3.1.1",
     "babel-eslint": "^10.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "extract-css-chunks-webpack-plugin": "^4.7.1",
     "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "socket.io": "^2.3.0",
+    "socket.io-stream": "^0.9.1",
+    "svg-sprite-loader": "^4.1.6",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.10"
   },
   "eslintConfig": {
     "root": true,

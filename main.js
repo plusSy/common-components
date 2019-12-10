@@ -1,5 +1,10 @@
-import ocjui from './components/index.js';
+import components from './components/index.js';
+import plugins from './plugins/index.js';
 
-window.console.log('main.js')
+window.console.log(plugins);
 
-export default ocjui;
+export const { dialog } = plugins;
+
+export const { comOcjPager } = components;
+
+export default components
