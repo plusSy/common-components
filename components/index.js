@@ -3,9 +3,6 @@
  * @description components for vue
  * @author ocj-team
 */
-// test
-import comOcjButton from './packages/comOcjButton/index';
-
 // components
 import comOcjPager from './packages/comOcjPager/index';
 import comOcjCascader from './packages/comOcjCascader/index';
@@ -23,7 +20,6 @@ import comOcjDropdown from './packages/comOcjCategory/index';
 import comOcjDialogPlugin from '../plugins/dialog/index.js';
 
 const components = [
-  comOcjButton,
   comOcjPager,
   comOcjCascader,
   comOcjPopover,

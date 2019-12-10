@@ -1,12 +1,9 @@
 import components from './components/index.js';
 import plugins from './plugins/index.js';
 
-window.console.log(plugins);
-
 export const { dialog } = plugins;
 
-export const { 
-  comOcjButton,
+export const {
   comOcjPager,
   comOcjCascader,
   comOcjPopover,
