@@ -1,13 +1,12 @@
 {
-  "name": "@ocj/common-components",
+  "name": "common-components",
   "version": "0.1.14",
   "main": "main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "dev": "webpack && docsify serve ./docs",
-    "build:doc": "webpack",
-    "deploy": "npm run build:doc && node examples/assets/js/deploy.js",
+    "doc": "webpack && docsify serve ./docs",
+    "deploy": "webpack && node examples/assets/js/deploy.js",
     "init": "npm install --registry http://npm.devops.erp.ocj.com.cn",
     "pub": "npm publish --registry http://npm.devops.erp.ocj.com.cn"
   },
@@ -52,6 +51,11 @@
       "parser": "babel-eslint"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:plusSy/common-components.git"
+  },
+  "author": "plusSy",
   "browserslist": [
     "> 1%",
     "last 2 versions"

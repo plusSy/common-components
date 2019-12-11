@@ -4,33 +4,13 @@
  * @author ocj-team
 */
 // components
-import comOcjPager from './packages/comOcjPager/index';
-import comOcjCascader from './packages/comOcjCascader/index';
-import comOcjPopover from './packages/comOcjPopover/index';
-import comOcjTcode from './packages/comOcjTcode/index';
-import comOcjTable from './packages/comOcjTable/index';
-import comOcjTree from './packages/comOcjTree/index';
-import comOcjEditor from './packages/comOcjTree/index';
-import comOcjClassCheck from './packages/comOcjClassCheck/index';
-import comOcjCategory from './packages/comOcjCategory/index';
-import comOcjIdInput from './packages/comOcjCategory/index';
-import comOcjDropdown from './packages/comOcjCategory/index';
+import comButton from './packages/comButton/index';
 
 // plugins
-import comOcjDialogPlugin from '../plugins/dialog/index.js';
+import comDialogPlugin from '../plugins/dialog/index.js';
 
 const components = [
-  comOcjPager,
-  comOcjCascader,
-  comOcjPopover,
-  comOcjTcode,
-  comOcjTable,
-  comOcjTree,
-  comOcjEditor,
-  comOcjClassCheck,
-  comOcjCategory,
-  comOcjIdInput,
-  comOcjDropdown
+  comButton
 ];
 
 // function & methods
@@ -45,9 +25,9 @@ const install = function (Vue, opts = {}) {
     components.forEach(component => {
       Vue.component(component.name, component)
     });
-    
+
     // plugins
-    Vue.use(comOcjDialogPlugin);
+    Vue.use(comDialogPlugin);
 
     // function & methods
     Vue.prototype.$Valid = VALID;
@@ -63,15 +43,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  comOcjPager,
-  comOcjCascader,
-  comOcjPopover,
-  comOcjTcode,
-  comOcjTable,
-  comOcjTree,
-  comOcjEditor,
-  comOcjClassCheck,
-  comOcjCategory,
-  comOcjIdInput,
-  comOcjDropdown
+  comButton
 };
