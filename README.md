@@ -94,7 +94,6 @@ Vue.use(comButton);
 +-- docs                        // 文档目录
 | +-- _icon
 | +-- _media
-| +-- className                 // 公共样式
 | +-- comcontent                // 公共内容
 | +-- components                // 公共组件
 | +-- plugins                   // 公共插件
