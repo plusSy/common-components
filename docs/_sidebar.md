@@ -1,7 +1,5 @@
 * [主页](/)
 
-* [公共样式](/className/)
-
 * [公共组件](/components/)
 
 * [公共内容](/comcontent/)

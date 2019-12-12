@@ -11,24 +11,21 @@
     />
     <link rel="stylesheet" href="_media/docsify/vue.css" />
     <link rel="stylesheet" href="_media/docsify/vuep.css" />
-    <link
-      rel="stylesheet"
-      href="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/element-ui.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <link rel="stylesheet" href="_media/index.css" />
   </head>
   <body>
     <nav>
       <a href="#/">首页</a>
-      <a href="#/className/">公共样式</a>
       <a href="#/components/">公共组件</a>
       <a href="#/comcontent/">公共内容</a>
       <a href="#/plugins/">公共插件</a>
       <a href="_icon/demo_index.html" target="_blank">自定义 ICON</a>
     </nav>
     <div id="app"></div>
-    <script src="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/ocj.js"></script>
-    <script src="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/element-ui.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <script src="_media/docsify/babel.min.js"></script>
     <script src="_media/docsify/docsify-demo-box-vue.min.js"></script>
     <script src="//unpkg.com/docsify-plugin-codefund/index.js"></script>
@@ -37,13 +34,16 @@
       var jsResources =
         '' +
         '\n<scr' +
-        `ipt src="//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/ocj.js"></scr` +
+        `ipt src="//unpkg.com/vue/dist/vue.js"></scr` +
+        'ipt>' +
+        '\n<scr' +
+        `ipt src="//unpkg.com/vue-router/dist/vue-router.js"></scr` +
         'ipt>' +
         '\n<scr' +
         `ipt src="//unpkg.com/element-ui/lib/index.js"></scr` +
         'ipt>'
       var cssResources =
-        '@import url("//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com/common/v0.0.2/element-ui.css");'
+        '@import url("unpkg.com/element-ui/lib/theme-chalk/index.css");'
       var bootCode = ''
 
       window.$docsify = {

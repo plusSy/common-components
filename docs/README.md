@@ -1,14 +1,5 @@
-# ocj-components  {docsify-ignore-all}
+# common-components  {docsify-ignore-all}
 ERP公共样式、公共组件文档
-
-
-
-
-##  [公共样式](/className/)
-
-将开发页面的公共样式进行抽离，减少页面私有样式的编写，保持css代码统一性和高维护性
-
-
 
 
 ## [公共组件](/components/)
@@ -27,4 +18,4 @@ ERP公共样式、公共组件文档
 将页面多次使用的方法进行抽离成插件。页面逻辑更加清晰，开发效率更高。
 
 ---
- {docsify-updated} 
+ {docsify-updated}
