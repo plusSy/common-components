@@ -111,7 +111,8 @@ Vue.use(comButton);
 | | | +-- client.js
 | | | +-- deploy.js             // socket.io 上传
 | | +-- logo.png
-| +-- components
+| +-- templates
+| +-- router                    // 路由配置
 | +-- App.vue
 | +-- main.js
 +-- plugins                     // 插件目录
