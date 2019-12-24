@@ -1,7 +1,6 @@
 /**
  * @module components
  * @description components for vue
- * @author ocj-team
 */
 // components
 import comButton from './packages/comButton/index';
