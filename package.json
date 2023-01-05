@@ -19,7 +19,7 @@
     "@ocj/eslint-config-ocj-vue": "^1.0.14",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
-    "@vue/cli-service": "^4.1.0",
+    "@vue/cli-service": "^5.0.8",
     "archiver": "^3.1.1",
     "babel-eslint": "^10.0.3",
     "babel-plugin-syntax-jsx": "^6.18.0",
@@ -33,7 +33,7 @@
     "sass-loader": "^8.0.0",
     "socket.io": "^2.3.0",
     "socket.io-stream": "^0.9.1",
-    "svg-sprite-loader": "^4.1.6",
+    "svg-sprite-loader": "^6.0.11",
     "vue-loader": "^15.7.2",
     "vue-template-compiler": "^2.6.10",
     "webpack-cli": "^3.3.10"
